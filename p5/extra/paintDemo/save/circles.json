@@ -1,0 +1,644 @@
+{
+  "circles": [
+    {
+      "x": 275,
+      "y": 41,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 0.71672
+    },
+    {
+      "x": 275,
+      "y": 44,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 0.779945
+    },
+    {
+      "x": 270,
+      "y": 57,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 0.8051649999999999
+    },
+    {
+      "x": 264,
+      "y": 77,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 0.812435
+    },
+    {
+      "x": 255,
+      "y": 98,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 0.8396549999999999
+    },
+    {
+      "x": 242,
+      "y": 121,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 0.84687
+    },
+    {
+      "x": 235,
+      "y": 132,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 0.877125
+    },
+    {
+      "x": 225,
+      "y": 145,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 0.8817200000000001
+    },
+    {
+      "x": 217,
+      "y": 150,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 0.897875
+    },
+    {
+      "x": 212,
+      "y": 153,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 0.9167649999999999
+    },
+    {
+      "x": 207,
+      "y": 153,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 0.93508
+    },
+    {
+      "x": 202,
+      "y": 154,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 0.9557749999999999
+    },
+    {
+      "x": 198,
+      "y": 154,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 0.9699800000000001
+    },
+    {
+      "x": 195,
+      "y": 154,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 0.9885400000000001
+    },
+    {
+      "x": 190,
+      "y": 154,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 1.004975
+    },
+    {
+      "x": 184,
+      "y": 153,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 1.022835
+    },
+    {
+      "x": 175,
+      "y": 150,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 1.036335
+    },
+    {
+      "x": 167,
+      "y": 146,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 1.05955
+    },
+    {
+      "x": 160,
+      "y": 142,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 1.071215
+    },
+    {
+      "x": 154,
+      "y": 136,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 1.102165
+    },
+    {
+      "x": 150,
+      "y": 129,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 1.1096400000000002
+    },
+    {
+      "x": 149,
+      "y": 120,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 1.1456549999999999
+    },
+    {
+      "x": 149,
+      "y": 110,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 1.146885
+    },
+    {
+      "x": 150,
+      "y": 99,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 1.157155
+    },
+    {
+      "x": 158,
+      "y": 91,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 1.17419
+    },
+    {
+      "x": 171,
+      "y": 83,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 1.191675
+    },
+    {
+      "x": 194,
+      "y": 80,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 1.229735
+    },
+    {
+      "x": 223,
+      "y": 83,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 1.231185
+    },
+    {
+      "x": 242,
+      "y": 102,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 1.244275
+    },
+    {
+      "x": 259,
+      "y": 133,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 1.27326
+    },
+    {
+      "x": 266,
+      "y": 166,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 1.280855
+    },
+    {
+      "x": 267,
+      "y": 195,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 1.31232
+    },
+    {
+      "x": 262,
+      "y": 219,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 1.3149549999999999
+    },
+    {
+      "x": 249,
+      "y": 237,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 1.337955
+    },
+    {
+      "x": 238,
+      "y": 246,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 1.34644
+    },
+    {
+      "x": 224,
+      "y": 255,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 1.377045
+    },
+    {
+      "x": 208,
+      "y": 259,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 1.3784750000000001
+    },
+    {
+      "x": 195,
+      "y": 260,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 1.3981400000000002
+    },
+    {
+      "x": 183,
+      "y": 260,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 1.4189649999999998
+    },
+    {
+      "x": 174,
+      "y": 256,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 1.429575
+    },
+    {
+      "x": 169,
+      "y": 251,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 1.45533
+    },
+    {
+      "x": 163,
+      "y": 245,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 1.46433
+    },
+    {
+      "x": 160,
+      "y": 239,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 1.489565
+    },
+    {
+      "x": 158,
+      "y": 230,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 1.4985050000000002
+    },
+    {
+      "x": 157,
+      "y": 218,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 1.52542
+    },
+    {
+      "x": 157,
+      "y": 203,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 1.537555
+    },
+    {
+      "x": 159,
+      "y": 189,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 1.56101
+    },
+    {
+      "x": 168,
+      "y": 177,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 1.569115
+    },
+    {
+      "x": 179,
+      "y": 168,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 1.584955
+    },
+    {
+      "x": 193,
+      "y": 162,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 1.60416
+    },
+    {
+      "x": 208,
+      "y": 161,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 1.6198299999999999
+    },
+    {
+      "x": 218,
+      "y": 161,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 1.6402999999999999
+    },
+    {
+      "x": 223,
+      "y": 163,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 1.65269
+    },
+    {
+      "x": 225,
+      "y": 167,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 1.678945
+    },
+    {
+      "x": 226,
+      "y": 170,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 1.686345
+    },
+    {
+      "x": 226,
+      "y": 173,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 1.7042350000000002
+    },
+    {
+      "x": 226,
+      "y": 176,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 1.734415
+    },
+    {
+      "x": 226,
+      "y": 179,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 1.73826
+    },
+    {
+      "x": 275,
+      "y": 172,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 4.564885
+    },
+    {
+      "x": 275,
+      "y": 172,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 4.60445
+    },
+    {
+      "x": 275,
+      "y": 177,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 4.631725
+    },
+    {
+      "x": 275,
+      "y": 185,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 4.637985
+    },
+    {
+      "x": 275,
+      "y": 194,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 4.664055
+    },
+    {
+      "x": 275,
+      "y": 211,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 4.67561
+    },
+    {
+      "x": 270,
+      "y": 222,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 4.689135
+    },
+    {
+      "x": 263,
+      "y": 230,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 4.705985
+    },
+    {
+      "x": 254,
+      "y": 238,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 4.723190000000001
+    },
+    {
+      "x": 244,
+      "y": 240,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 4.740875
+    },
+    {
+      "x": 237,
+      "y": 240,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 4.771985
+    },
+    {
+      "x": 232,
+      "y": 237,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 4.77403
+    },
+    {
+      "x": 231,
+      "y": 226,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 4.791810000000001
+    },
+    {
+      "x": 231,
+      "y": 209,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 4.80833
+    },
+    {
+      "x": 233,
+      "y": 200,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 4.8259300000000005
+    },
+    {
+      "x": 242,
+      "y": 190,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 4.843305
+    },
+    {
+      "x": 252,
+      "y": 185,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 4.862425
+    },
+    {
+      "x": 260,
+      "y": 184,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 4.886145000000001
+    },
+    {
+      "x": 269,
+      "y": 184,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 4.898045
+    },
+    {
+      "x": 273,
+      "y": 184,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 4.921555000000001
+    },
+    {
+      "x": 275,
+      "y": 186,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 4.92968
+    },
+    {
+      "x": 276,
+      "y": 187,
+      "radius": 20,
+      "amplitude": 8,
+      "frequence": 1,
+      "phase": 4.947615
+    }
+  ]
+}
