@@ -52,12 +52,10 @@ function draw() {
 			var yshift = 0.2*((mouseY-height/2)-yy);
 			xshift = 0.8*xshift + 0.6*yshift;
 			yshift = -0.8*xshift + 0.6*yshift;
-			xshift = 0;
-			yshift = 0;
-			var dx = (30*sin(1.2*tNow+0.01*xx)*
-				sin(0.1*(yy+0.3*xx)) + xshift) * dt;
-			var dy = (18*cos(1.5*tNow+0.01*yy)*
-				cos(0.1*(xx-0.5*yy)) + yshift) * dt;
+			xshift *= 0;
+			yshift *= 0;
+			var dx = (Fxyt1(xx,yy,tNow) + xshift) * dt;
+			var dy = (Fxyt2(xx,yy,tNow) + yshift) * dt;
 			xx += dx;
 			yy += dy;
 			x[i][j] = xx;
@@ -72,13 +70,15 @@ function draw() {
 			scale(scl,scl);
 			fill(cr);// 填充白色
 			noStroke();
-			ellipse(0,0,0.5,0.5); // 画圆形
+			ellipse(0,0,1,1); // 画圆形
 			pop();
 		}
 	}
 
 	lastTime = tNow;// 记录时刻
 }
+
+
 
 function getColor(x,y)
 {
