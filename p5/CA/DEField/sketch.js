@@ -6,7 +6,7 @@ var colNum = 32;
 var rowNum = 32;
 var gap = 10;
 
-var timeInterval = 1;
+var timeInterval = 0.05;
 var bRunning = true;
 
 // 函数setup() ：准备阶段
@@ -26,13 +26,14 @@ function setup()
 		for(var j=0;j<rowNum;j++)
 		{
 			//C[i][j] = random(0,1)>0.95?1:0;
-			C[i][j] = 0;
-			//C[i][j] = random(0,1);
-			
+			//C[i][j] = 0;
+			C[i][j] = random(0,1);
+			/*
 			if(j==14||i==12||j==17||i==18)
 			{
 				C[i][j] = 1;
 			}
+			*/
 			
 			/*
 			(j==15)
@@ -67,33 +68,74 @@ function draw() {
 	fill(255,255,255,255);
 	rect(0,0,2*width,2*height);
 
+	// 画出整个『场』C
 	drawField();
-//print("CID1: " + CID1 + " CID0:" + CID0);
+
 	if(!bRunning)
 	{
 		return;
 	}
 
-	// update C
+	// update C： 更新整个场
 	var tNow = getTime(); // 当前时刻
 	var dt = tNow - lastTime; // 时差
 	if(dt>timeInterval)
 	{
-		updateC();
-
-		lastTime = tNow;
+		//updateC();
+		updateC2(dt);
+		lastTie = tNow;
 	}
 
-	// copy buffer to C
+}
+
+
+function updateC()
+{
 	for(var i =0;i<colNum;i++)
 	{
 		for(var j=0;j<rowNum;j++)
 		{
-			C[i][j] = Buffer[i][j];
+			var sum = 0;
+			var iternum = 0
+			for(var k=-1;k<=1;k++)
+			{
+				for(var l=-1;l<=1;l++)
+				{
+					var id0 = clampId((i+k),colNum);
+					var id1 = clampId((j+l),rowNum);
+					
+					var value = C[id0][id1];
+					sum += value;
+					iternum ++;
+				}
+			}
+				//print(" iterNum:" + iternum + " sum:"+ sum);
+				
+				//print("Haha  " + "CID1: " + CID1 + " CID0:" + CID0);
+				//C[CID1][i][j] = C[CID0][i][j];
+
+			var valNow = C[i][j];
+			var isAlive = (valNow==1);
+			Buffer[i][j] = C[i][j];
+			if(isAlive)
+			{
+				if(sum<=1||sum>4)
+				{
+					Buffer[i][j] = 0;
+				}
+			}
+			else
+			{
+				if(sum===3)
+				{
+					Buffer[i][j] = 1;
+				}
+			}
+
 		}
 	}
 
-
+	CopyBuffer2C();
 }
 
 function updateC()
@@ -141,54 +183,28 @@ function updateC()
 
 		}
 	}
+
+	CopyBuffer2C();
 }
 
 
-function updateC2()
+
+function updateC2(dt)
 {
+	var a = 0.005;
+	var b = -0.001;
 	for(var i =0;i<colNum;i++)
 	{
 		for(var j=0;j<rowNum;j++)
 		{
-			var sum = 0;
-			var iternum = 0
-			for(var k=-1;k<=1;k++)
-			{
-				for(var l=-1;l<=1;l++)
-				{
-					var id0 = clampId((i+k),colNum);
-					var id1 = clampId((j+l),rowNum);
-					
-					var value = C[id0][id1];
-					sum += value;
-					iternum ++;
-				}
-			}
-				//print(" iterNum:" + iternum + " sum:"+ sum);
-				
-				//print("Haha  " + "CID1: " + CID1 + " CID0:" + CID0);
-				//C[CID1][i][j] = C[CID0][i][j];
-
-			var valNow = C[i][j];
-			var isAlive = (valNow==1);
-			Buffer[i][j] = C[i][j];
-			if(isAlive)
-			{
-				if(sum<=1||sum>4)
-				{
-					Buffer[i][j] = 0;
-				}
-			}
-			else
-			{
-				if(sum===3)
-				{
-					Buffer[i][j] = 1;
-				}
-			}
-
+			var dx = GetDX(i,j);
+			var dy = GetDY(i,j);
+			Buffer[i][j] = 
+				C[i][j] + 
+				(a*dx + b*dy)*dt;
 		}
 	}
+	CopyBuffer2C();
 }
 
 function drawField()
@@ -208,6 +224,55 @@ function drawField()
 			strokeWeight(0.05);
 			rect(0,0,1,1); // 画圆形
 			pop();
+		}
+	}
+}
+
+
+function GetDX(i,j)
+{
+	var iPrev = i-1;
+	var iNext = i+1;
+	if(i==0)
+	{
+		iPrev = colNum-1;
+	}
+	else if(i==colNum-1)
+	{
+		iNext = 0;
+	}
+	var cNext = C[iNext][j];
+	var cPrev = C[iPrev][j];
+	var dx = cNext-cPrev;
+	return dx;
+}
+
+function GetDY(i,j)
+{
+	var jPrev = j-1;
+	var jNext = j+1;
+	if(j==0)
+	{
+		jPrev = rowNum-1;
+	}
+	else if(j==rowNum-1)
+	{
+		jNext = 0;
+	}
+	var cNext = C[i][jNext];
+	var cPrev = C[i][jPrev];
+	var dy = cNext-cPrev;
+	return dy;
+}
+
+function CopyBuffer2C()
+{
+	// copy buffer to C
+	for(var i =0;i<colNum;i++)
+	{
+		for(var j=0;j<rowNum;j++)
+		{
+			C[i][j] = Buffer[i][j];
 		}
 	}
 }
