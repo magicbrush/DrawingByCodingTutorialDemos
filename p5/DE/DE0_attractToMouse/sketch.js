@@ -30,9 +30,9 @@ function setup()
 // 函数draw()：作画阶段
 var count = 0;
 function draw() {
-	if(count>=25)
+	if(count>=200)
 	{
-		fill(255,7);
+		fill(255,3);
 		count = 0;
 	}
 	count ++;
@@ -50,10 +50,12 @@ function draw() {
 			var yy = y[i][j];
 			var xshift = 0.2*((mouseX-width/2)-xx);
 			var yshift = 0.2*((mouseY-height/2)-yy);
-			xshift = 0.8*xshift + 0.6*yshift;
-			yshift = -0.8*xshift + 0.6*yshift;
-			xshift = 0;
-			yshift = 0;
+			if(mouseIsPressed)
+			{
+				xshift = -xshift;
+				yshift = -yshift;
+			}
+			
 			var dx = (30*sin(1.2*tNow+0.01*xx)*
 				sin(0.1*(yy+0.3*xx)) + xshift) * dt;
 			var dy = (18*cos(1.5*tNow+0.01*yy)*
