@@ -1,33 +1,41 @@
+// 球的位置（x,y)
 var x,y;
-
-var lastTime = 0;
 
 // 函数setup() ：准备阶段
 function setup() 
 {
 	createCanvas(480,480);
-	
+	randXY();
+}
 
-	x = -5.55;
-	y = 1.25;
-	lastTime = getTime();
-	//lastTime = 0.0;
+function randXY()
+{
+	x = random(-200,200);
+	y = random(-200,200);
+}
+
+
+function mousePressed()
+{
+	randXY();
 }
 
 // 函数draw()：作画阶段
 function draw() {
-	fill(255,1);
-	rect(0,0,width,height);
 
-	var tNow = getTime(); // 当前时刻
-	var dt = tNow - lastTime; // 时差
+	var dt = 1;
+	var dx = sin(0.1*y) * dt;
+	var dy = cos(0.1*x) * dt;
 
-	var dx = 25*sin(0.1*y) * dt;
-	var dy = 25*cos(0.1*x) * dt;
+	x = x + dx;
+	y = y + dy;
 
-	x += dx;
-	y += dy;
+	drawBall(x,y);
+}
 
+// 在x,y位置画球
+function drawBall(x,y)
+{
 	push();
 	translate(width/2,height/2);
 	translate(x,y);
@@ -36,11 +44,9 @@ function draw() {
 	noStroke();
 	ellipse(0,0,0.1,0.1); // 画圆形
 	pop();
-
-	lastTime = tNow;// 记录时刻
 }
 
-
+// 返回当前时刻
 function getTime()
 {
 	return millis()/1000;
