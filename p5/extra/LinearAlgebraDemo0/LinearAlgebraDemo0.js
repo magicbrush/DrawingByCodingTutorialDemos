@@ -7,6 +7,10 @@ var y1;
 var Ctrl = false;
 var rotatingA = false;
 
+var v2;
+var a = 1.5;
+var b = -1;
+
 // 插值速率
 //var lerpSpd = 3.0;
 
@@ -17,6 +21,7 @@ function setup() {
 	y0 = 0;
 	x1 = 0;
 	y1 = 1;
+	v2 = createVector(0,0);
 	rectMode(CENTER);
 }
 
@@ -118,10 +123,27 @@ function draw() {
 		roundValue(Det), roundValue(cx1),roundValue(cy1));
 	pop();
 
+	var v0 = createVector(a*x0,a*y0);
+	var v1 = createVector(b*x1,b*y1);
+	var v2 = p5.Vector.add(v0,v1);
+
+	push();
+	translate(width/2,height/2);
+	stroke(0,255,0);
+	strokeWeight(2.5);
+	drawVector(createVector(0,0),v2);
+	pop();
+	dispVectorValue(v2.x, v2.y, "s", color(0,255,0));
+
+
+
+
 	text("Det:" + roundValue(Det), 10,20);
 	text("Dot:" + roundValue(Dot), 10,50);
 	text("Sqrt(Det^2+Dot^2):" + 
 		roundValue(DetDotSqrRoot) , 10,80);
+
+
 
 	lastTime = tNow;
 }
@@ -137,6 +159,11 @@ function keyReleased()
 		rotatingA = !rotatingA;
 	}
 	
+}
+
+function drawVector(v0,v1)
+{
+	line(v0.x,v0.y,v1.x,v1.y);
 }
 
 function dispVectorValue(x,y,name,color)
